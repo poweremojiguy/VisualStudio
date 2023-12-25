@@ -1,5 +1,5 @@
 import os
 
 
-currentdirectory = os.getcwd
+currentdirectory = os.getcwd()
 print(currentdirectory)
