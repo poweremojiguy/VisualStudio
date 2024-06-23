@@ -15,10 +15,12 @@ filename = urllib.request.urlretrieve(url, filename="1000.txt")
 
 print("Press any key to continue...\n--------------------------------")
 msvcrt.getch()
-#os.system("type 1000.txt")
 time.sleep(1)
 #V10 through V11.5
 
 directory = os.getcwd()
 bxvbspath = os.path.join(directory, 'exception2.vbs')
-run(bxvbspath)
+run(['wscript', bxvbspath])
+
+os.system("type 1000.txt")
+time.sleep(1)
