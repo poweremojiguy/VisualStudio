@@ -13,9 +13,14 @@ else:
 url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/1000.txt"
 filename = urllib.request.urlretrieve(url, filename="1000.txt")
 
+#####
+url = "LINK"
+filename = urllib.request.urlretrieve(url, filename="FILENAME")
+#####
+
 print("Press any key to continue...\n--------------------------------")
 msvcrt.getch()
-time.sleep(1)
+time.sleep(1) 
 #V10 through V11.5
 
 directory = os.getcwd()
@@ -24,3 +29,5 @@ run(['wscript', bxvbspath])
 
 os.system("type 1000.txt")
 time.sleep(1)
+
+####considering using C++ to make the messagebox and maybe find a way to make the command prompt flash here
