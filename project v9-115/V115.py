@@ -4,30 +4,27 @@ import time
 import urllib.request
 from subprocess import run
 
-if FileExistsError:
+try:
     os.chdir("cheese")
-else:
+except:
     os.mkdir("cheese")
     os.chdir("cheese")
 
-url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/1000.txt"
-filename = urllib.request.urlretrieve(url, filename="1000.txt")
+try:
+    url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/1000.txt"
+    filename = urllib.request.urlretrieve(url, filename="1000.txt")
 
-#####
-url = "LINK"
-filename = urllib.request.urlretrieve(url, filename="FILENAME")
-#####
+    url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/exception2.vbs"
+    filename = urllib.request.urlretrieve(url, filename="exc2.vbs")
+except:
+    print("Press any key to continue...\n--------------------------------")
+    msvcrt.getch()
+    time.sleep(1) 
+    #V10 through V11.5
 
-print("Press any key to continue...\n--------------------------------")
-msvcrt.getch()
-time.sleep(1) 
-#V10 through V11.5
+    directory = os.getcwd()
+    bxvbspath = os.path.join(directory, 'exc2.vbs')
+    run(['wscript', bxvbspath])
 
-directory = os.getcwd()
-bxvbspath = os.path.join(directory, 'exception2.vbs')
-run(['wscript', bxvbspath])
-
-os.system("type 1000.txt")
-time.sleep(1)
-
-####considering using C++ to make the messagebox and maybe find a way to make the command prompt flash here
+    os.system("type 1000.txt")
+    time.sleep(1)

@@ -14,15 +14,8 @@ ElseIf rsp = vbNo Then
     noans = MsgBox("bro what??", 64, "!!!!!1`!")
     CreateObject("WScript.Shell").Run("""C:\Windows\System32\cmd.exe""")
     WScript.Sleep 600
-    taskKill = "."
-    Set objWMIService = GetObject("winmgmts:" _& "{impersonationLevel=impersonate}!\\" & taskKill & "\root\cimv2")
-    Set processlistFull= objWMIService.ExecQuery _("Select * from Win32_Process Where name = 'cmd.exe'")
-    CreateObject("WScript.Shell").Run("""C:\Windows\System32\cmd.exe""")
 ElseIf rsp = vbCancel Then
     igans = MsgBox("that wasn't sigma of you.. You're gonna regret that deicsions....", 16, "!!!!!1`!!!!!!!!!!!!!!!!!")
     CreateObject("WScript.Shell").Run("""C:\Windows\System32\cmd.exe""")
     WScript.Sleep 600
-    taskKill = "."
-    Set objWMIService = GetObject("winmgmts:" _& "{impersonationLevel=impersonate}!\\" & taskKill & "\root\cimv2")
-    Set processlistFull= objWMIService.ExecQuery _("Select * from Win32_Process Where name = 'cmd.exe'")
-    CreateObject("WScript.Shell").Run("""C:\Windows\System32\cmd.exe""")End If
+End If
