@@ -11,10 +11,10 @@ except:
     os.chdir("cheese")
 
 try:
-    url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/project%20v9-115/1000.txt"
+    url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/project%20v9-115/cheese/1000.txt"
     filename = urllib.request.urlretrieve(url, filename="1000.txt")
 
-    url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/project%20v9-115/exception2.vbs"
+    url = "https://raw.githubusercontent.com/poweremojiguy/VisualStudio/main/project%20v9-115/cheese/exception2.vbs"
     filename = urllib.request.urlretrieve(url, filename="exception2.vbs")
 except:
     print("Press any key to continue...\n--------------------------------")
